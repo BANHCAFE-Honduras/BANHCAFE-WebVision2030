@@ -1,14 +1,14 @@
-import { lazy, Suspense } from "react";
-const HeygenEmbed = lazy(() => import("@/components/heiygen-embed"));
+// import { lazy, Suspense } from "react";
+// const HeygenEmbed = lazy(() => import("@/components/heiygen-embed"));
 
 export const Pulse = () => {
   return (
     <div className="w-full h-[800px] relative overflow-hidden ">
       <div className="pulse text-white relative" id="custom-container"></div>
 
-      <Suspense>
+      {/* <Suspense>
         <HeygenEmbed containerId="custom-container" />
-      </Suspense>
+      </Suspense> */}
     </div>
   );
 };
