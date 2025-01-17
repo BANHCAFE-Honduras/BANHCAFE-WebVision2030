@@ -2,9 +2,10 @@ import { lazy, Suspense } from "react";
 
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { HeroSkeleton } from "@/components/hero";
-import { QRSkeleton } from "@/components/qr";
+
 import { SectionIa } from "@/components/section-ia";
+import { HeroSkeleton } from "@/components/skeletons/hero-skeleton";
+import { QRSkeleton } from "@/components/skeletons/qr-skeleton";
 
 const Hero = lazy(() => import("@/components/hero"));
 const QR = lazy(() => import("@/components/qr"));
