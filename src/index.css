@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply bg-white text-zinc-800;
+    @apply font-sans;
+    font-size: 62.5%;
+  }
+
+  body {
+    @apply text-md font-normal;
+  }
+
+  :root {
+    --header-height: 6rem;
+  }
+}
+
+@layer components {
+  .glass {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    border-width: 1px;
+    backdrop-filter: brightness(100%) blur(7px);
+  }
+
+  .embed-html ol,
+  .embed-html ul {
+    padding-left: 2rem;
+    padding-block: 1rem;
+  }
+
+  .embed-html ol {
+    list-style-type: decimal;
+  }
+
+  .embed-html ul {
+    list-style-type: disc;
+  }
+
+  .background-texture {
+    @apply bg-white bg-opacity-70 bg-[url('/background.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay;
+  }
+
+  .background-texture-primary {
+    @apply bg-primary bg-opacity-50 bg-[url('/background.webp')] bg-cover bg-center bg-no-repeat bg-blend-multiply;
+  }
+}
+
+.pulse {
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(#9f1e34, #c3002f);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.pulse,
+.pulse::before,
+.pulse::after {
+  content: "";
+  display: grid;
+  grid-area: 1/1;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+
+  animation: pulsing 3s linear infinite var(--s, 0s);
+}
+
+.pulse::before {
+  --s: 1s;
+}
+.pulse::after {
+  --s: 2s;
+}
+
+@keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 20rem #c3002e89;
+  }
+}
+
+@media (max-width: 768px) {
+  .pulse {
+    height: 200px;
+    width: 200px;
+  }
+
+  .pulse,
+  .pulse::before,
+  .pulse::after {
+    height: 200px;
+    width: 200px;
+  }
+
+  @keyframes pulsing {
+    to {
+      box-shadow: 0 0 0 16rem #c3002e69;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .pulse {
+    height: 200px;
+    width: 200px;
+  }
+
+  .pulse,
+  .pulse::before,
+  .pulse::after {
+    height: 200px;
+    width: 200px;
+  }
+
+  @keyframes pulsing {
+    to {
+      box-shadow: 0 0 0 12rem #c3002e69;
+    }
+  }
+}
