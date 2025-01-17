@@ -6,5 +6,5 @@ interface ContainerProps {
 }
 
 export function Container({ children, className }: ContainerProps) {
-  return <div className={cx("mx-10 flex  max-w-full", className)}>{children}</div>;
+  return <div className={cx("mx-6 md:mx-10 flex  max-w-full", className)}>{children}</div>;
 }
