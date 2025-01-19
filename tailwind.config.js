@@ -34,7 +34,7 @@ module.exports = {
       h2: ["4.2rem", "1.3"],
       "5xl": ["5.2rem", "1.2"],
       h1: ["6.2rem", "1.12"],
-      "9xl": ["8rem", "1.5"],
+      "9xl": ["8rem", "1.12"],
     },
     fontWeight: {
       thin: "350",

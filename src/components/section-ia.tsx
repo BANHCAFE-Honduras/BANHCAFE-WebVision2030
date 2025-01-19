@@ -6,7 +6,7 @@ export const SectionIa = () => {
     <div className="flex flex-col">
       <Container>
         <div className="w-full flex flex-col justify-center items-center">
-          <h2 className="text-balance text-h4 font-black tracking-tighter sm:text-h3 md:text-h1 xl:text-9xl py-10 text-center">
+          <h2 className="text-balance text-h4 font-black tracking-tighter sm:text-h3 md:text-h1 xl:text-9xl py-3 text-center">
             BANHCAFE IA
           </h2>
           <p className="text-md sm:text-xxl md:max-w-[50rem] text-center">

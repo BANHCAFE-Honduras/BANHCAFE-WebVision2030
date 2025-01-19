@@ -56,8 +56,8 @@
 }
 
 .pulse {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   background: linear-gradient(#9f1e34, #c3002f);
   position: absolute;
   margin: auto;
@@ -78,8 +78,8 @@
   grid-area: 1/1;
   aspect-ratio: 1;
   border-radius: 50%;
-  height: 350px;
-  width: 350px;
+  height: 200px;
+  width: 200px;
 
   animation: pulsing 3s linear infinite var(--s, 0s);
 }
@@ -93,26 +93,26 @@
 
 @keyframes pulsing {
   to {
-    box-shadow: 0 0 0 20rem #c3002e89;
+    box-shadow: 0 0 0 12rem #c3002e89;
   }
 }
 
 @media (max-width: 768px) {
   .pulse {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 
   .pulse,
   .pulse::before,
   .pulse::after {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 
   @keyframes pulsing {
     to {
-      box-shadow: 0 0 0 16rem #c3002e69;
+      box-shadow: 0 0 0 8rem #c3002e69;
     }
   }
 }
@@ -132,7 +132,7 @@
 
   @keyframes pulsing {
     to {
-      box-shadow: 0 0 0 12rem #c3002e69;
+      box-shadow: 0 0 0 6rem #c3002e69;
     }
   }
 }
