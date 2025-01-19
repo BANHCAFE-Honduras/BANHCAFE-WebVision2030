@@ -112,7 +112,7 @@
 
   @keyframes pulsing {
     to {
-      box-shadow: 0 0 0 8rem #c3002e69;
+      box-shadow: 0 0 0 6.5rem #c3002e69;
     }
   }
 }
