@@ -9,7 +9,7 @@ const HeygenEmbed: React.FC<HeygenEmbedProps> = ({ containerId }) => {
   const widthScreen = useWindowWidth();
   const expandedWidth =
     widthScreen! <= 540
-      ? "height: 250px; width: 300px; left: 50%; transform: translateX(-50%);"
+      ? "height: 200px; width: 260px; left: 50%; transform: translateX(-50%);"
       : widthScreen! <= 768
       ? "height: 300px; width: calc(300px * 16 / 9);"
       : widthScreen! <= 1024
