@@ -9,12 +9,12 @@ const HeygenEmbed: React.FC<HeygenEmbedProps> = ({ containerId }) => {
   const widthScreen = useWindowWidth();
   const expandedWidth =
     widthScreen! <= 540
-      ? "height: 400px; width: 300px; left: 50%; transform: translateX(-50%);"
+      ? "height: 250px; width: 300px; left: 50%; transform: translateX(-50%);"
       : widthScreen! <= 768
-      ? "height: 366px; width: calc(300px * 16 / 9);"
+      ? "height: 300px; width: calc(300px * 16 / 9);"
       : widthScreen! <= 1024
-      ? "height: 400px; width: calc(366px * 16 / 9);"
-      : "height: 500px; width: calc(500px * 16 / 9);";
+      ? "height: 350px; width: calc(366px * 16 / 9);"
+      : "height: 400px; width: calc(500px * 16 / 9);";
 
   useEffect(() => {
     const host = "https://labs.heygen.com";
